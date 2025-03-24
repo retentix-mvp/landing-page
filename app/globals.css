@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 80% 8%;
+
+    /* Azul escuro (navy) */
+    --primary: 214 100% 14%;
+    --primary-foreground: 0 0% 90%;
+
+    /* Azul médio */
+    --secondary: 215 100% 25%;
+    --secondary-foreground: 0 0% 90%;
+
+    /* Azul muito escuro */
+    --dark: 217 100% 5%;
+    --dark-foreground: 0 0% 90%;
+
+    /* Cinza claro */
+    --light: 0 0% 90%;
+    --light-foreground: 220 80% 8%;
+
+    /* Cinza médio */
+    --medium: 0 0% 80%;
+    --medium-foreground: 220 80% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 80% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 80% 8%;
+
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 214 100% 14%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+

@@ -25,7 +25,9 @@ export default function RealEstateAILanding() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Building className="h-6 w-6 text-[#00204a]" aria-hidden="true" />
-            <span className="text-xl font-bold text-[#00204a]">Retentix</span>
+             <Link href="#hero-heading">
+              <span className="text-xl font-bold text-[#00204a]">Retentix</span>
+             </Link>
           </div>
           <nav className="hidden md:flex gap-6" aria-label="Navegação principal">
             <Link href="#recursos" className="text-sm font-medium text-[#000a17] hover:text-[#00367d]">

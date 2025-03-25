@@ -13,6 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script defer src="https://umami-production-c110.up.railway.app/script.js" data-website-id="4103057a-9636-4a53-9276-5687c8bf327b"></script>
+      </head>
       <body>{children}</body>
     </html>
   )

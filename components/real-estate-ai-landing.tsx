@@ -286,7 +286,7 @@ export default function RealEstateAILanding() {
               {[
                 {
                   name: "Corretor Iniciante",
-                  price: "R$ 297",
+                  price: "R$ 149",
                   period: "/mês",
                   description: "Para corretores autônomos",
                   features: [
@@ -300,7 +300,7 @@ export default function RealEstateAILanding() {
                 },
                 {
                   name: "Corretor Profissional",
-                  price: "R$ 497",
+                  price: "R$ 249",
                   period: "/mês",
                   description: "Para corretores estabelecidos",
                   features: [
@@ -314,14 +314,14 @@ export default function RealEstateAILanding() {
                 },
                 {
                   name: "Imobiliária",
-                  price: "R$ 997",
+                  price: "R$ 499",
                   period: "/mês",
                   description: "Para imobiliárias e equipes",
                   features: [
                     "Leads imobiliários ilimitados",
                     "Integração com todos os canais",
                     "Múltiplos corretores",
-                    "Gerente de sucesso dedicado",
+                    "Relatórios estratégicos",
                   ],
                   popular: false,
                   cta: "Falar com Consultor",

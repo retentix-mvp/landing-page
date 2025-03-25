@@ -393,12 +393,12 @@ export default function RealEstateAILanding() {
               <span className="text-xl font-bold text-[#00204a]">Retentix</span>
             </div>
             <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center">
-              <Link href="/termos" className="text-sm text-[#000a17]/70 hover:text-[#00367d]">
+              {/* <Link href="/termos" className="text-sm text-[#000a17]/70 hover:text-[#00367d]">
                 Termos de Uso
               </Link>
               <Link href="/privacidade" className="text-sm text-[#000a17]/70 hover:text-[#00367d]">
                 Política de Privacidade
-              </Link>
+              </Link> */}
               <p className="text-sm text-[#000a17]/70">
                 © {new Date().getFullYear()} Retentix. Todos os direitos reservados.
               </p>

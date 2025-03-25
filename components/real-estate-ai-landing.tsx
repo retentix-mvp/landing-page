@@ -71,10 +71,10 @@ export default function RealEstateAILanding() {
               </div>
               <div className="flex items-center justify-center gap-4 pt-4">
                 <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((i) => (
+                  {[1, 2, 3, 4].map((i, index) => (
                     <div key={i} className="h-8 w-8 rounded-full border-2 border-white bg-[#e6e6e6] overflow-hidden">
                       <Image
-                        src={`/placeholder.svg?height=32&width=32`}
+                        src={`/img/${i}.jpg?height=32&width=32`}
                         alt={`Corretor de imóveis usuário ${i}`}
                         width={32}
                         height={32}
@@ -222,21 +222,21 @@ export default function RealEstateAILanding() {
                 {
                   name: "Carlos Silva",
                   role: "Corretor Autônomo - São Paulo",
-                  image: "/placeholder.svg?height=80&width=80",
+                  image: "/carlos.jpg?height=80&width=80",
                   content:
                     "Consegui triplicar minha carteira de clientes em apenas 2 meses. A IA qualifica perfeitamente os leads imobiliários.",
                 },
                 {
                   name: "Ana Oliveira",
                   role: "Corretora de Imóveis de Luxo - Rio de Janeiro",
-                  image: "/placeholder.svg?height=80&width=80",
+                  image: "/ana.jpg?height=80&width=80",
                   content:
                     "Meus clientes ficam impressionados com a rapidez e precisão do atendimento sobre os imóveis.",
                 },
                 {
                   name: "Roberto Mendes",
                   role: "Proprietário de Imobiliária - Belo Horizonte",
-                  image: "/placeholder.svg?height=80&width=80",
+                  image: "/roberto.jpg?height=80&width=80",
                   content:
                     "Implementei na minha equipe de 12 corretores e conseguimos aumentar as vendas de apartamentos em 230%.",
                 },

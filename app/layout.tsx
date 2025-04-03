@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "Retentix",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/retentix.png",
         width: 1200,
         height: 630,
         alt: "Retentix - IA para Corretores de Imóveis",

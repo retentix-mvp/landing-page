@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
       <script defer src="https://retentix.up.railway.app/script.js" data-website-id="4103057a-9636-4a53-9276-5687c8bf327b"></script>
       </head>

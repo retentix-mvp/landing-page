@@ -55,12 +55,12 @@ export default function RealEstateAILanding() {
         <section className="py-16 md:py-24 bg-white" aria-labelledby="hero-heading">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-6">
+              <span className="inline-block py-1 px-3 bg-amber-100 text-amber-800 rounded-full text-sm font-medium mb-2">Vagas Limitadas 🔥</span>
               <h1 id="hero-heading" className="text-4xl md:text-5xl font-bold leading-tight text-[#000a17]">
-                Automatize seu Atendimento Imobiliário e <span className="text-[#00367d]">Triplique suas Vendas</span>
+                <span className="text-[#00367d]">Pare de perder tempo</span> com leads frios e <span className="text-[#00367d]">Triplique suas Vendas</span> de Imóveis
               </h1>
               <p className="text-xl text-[#000a17]/80">
-                O primeiro assistente virtual com IA para corretores de imóveis e imobiliárias que atende, qualifica e
-                converte leads 24/7 sem sua intervenção.
+                O assistente virtual com IA que <span className="font-bold underline">faz o trabalho pesado por você</span>: atende, qualifica e converte leads 24/7 enquanto você fecha mais negócios.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
@@ -68,7 +68,7 @@ export default function RealEstateAILanding() {
                   className="text-base bg-[#00204a] hover:bg-[#00367d] text-white"
                   onClick={scrollToForm}
                 >
-                  Garantir Minha Vaga <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                  QUERO VENDER MAIS IMÓVEIS <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
                 </Button>
               </div>
               <div className="flex items-center justify-center gap-4 pt-4">
@@ -167,32 +167,32 @@ export default function RealEstateAILanding() {
         {/* Benefits Section */}
         <section className="py-16 bg-[#e6e6e6]" aria-labelledby="beneficios-heading">
           <div className="container">
-            <h2 id="beneficios-heading" className="sr-only">
-              Benefícios para Corretores e Imobiliárias
+            <h2 id="beneficios-heading" className="text-center text-3xl font-bold mb-8 text-[#000a17]">
+              Transforme seu Negócio Imobiliário Hoje
             </h2>
             <div className="max-w-3xl mx-auto space-y-8">
               {[
                 {
-                  title: "Economize até 40 horas por semana",
+                  title: "Economize até 40 horas por semana em atendimentos iniciais",
                   description:
-                    "Elimine tarefas repetitivas de atendimento inicial e qualificação de leads imobiliários.",
+                    "Imagine o que você poderia fazer com 40 horas extras por mês: mais visitas, mais fechamentos, mais comissões no seu bolso.",
                 },
                 {
-                  title: "Aumente sua taxa de conversão em até 300%",
+                  title: "Venda 3x mais sem aumentar seu esforço",
                   description:
-                    "Atendimento imediato e personalizado aumenta drasticamente as chances de vender mais imóveis.",
+                    "Enquanto outros corretores desperdiçam tempo com leads frios, você estará fechando negócios com clientes já qualificados.",
                 },
                 {
-                  title: "Escale sua imobiliária sem contratar assistentes",
-                  description: "Um único corretor pode gerenciar o volume de leads de uma equipe inteira de vendas.",
+                  title: "Escale sua operação sem contratar assistentes",
+                  description: "Economize R$2.000-4.000/mês em custos de assistentes e tenha um atendimento superior 24/7.",
                 },
                 {
-                  title: "Nunca mais perca um cliente por demora no atendimento",
+                  title: "Seja o primeiro a responder (e o primeiro a vender)",
                   description:
-                    "70% dos interessados em imóveis fecham com o primeiro corretor que responde. Seja sempre o primeiro.",
+                    "70% dos interessados em imóveis fecham com o primeiro corretor que responde. Com a Retentix, você sempre chega primeiro.",
                 },
               ].map((benefit, index) => (
-                <div key={index} className="flex gap-4">
+                <div key={index} className="flex gap-4 p-4 bg-white rounded-lg shadow-sm">
                   <div className="mt-1">
                     <CheckCircle className="h-6 w-6 text-[#00367d]" aria-hidden="true" />
                   </div>
@@ -202,6 +202,14 @@ export default function RealEstateAILanding() {
                   </div>
                 </div>
               ))}
+              <div className="pt-6">
+                <Button
+                  className="w-full bg-[#00204a] hover:bg-[#00367d] text-white py-6 text-lg"
+                  onClick={scrollToForm}
+                >
+                  QUERO AUMENTAR MINHAS VENDAS AGORA <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+                </Button>
+              </div>
             </div>
           </div>
         </section>

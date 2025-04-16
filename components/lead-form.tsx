@@ -5,7 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { ArrowRight, CheckCircle, Loader2 } from "lucide-react"
+import { ArrowRight, CheckCircle, Loader2, Clock, Lock } from "lucide-react"
 import { saveLead } from "@/actions/lead"
 import { useToast } from "@/hooks/use-toast"
 
@@ -25,8 +25,6 @@ export default function LeadForm() {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
-
-  // Modifique a função handleSubmit para não enviar data_cadastro
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -75,8 +73,8 @@ export default function LeadForm() {
           imobiliaria: "",
           cidade: "",
         })
-      } else {
-        throw new Error(result.error?.message || "Erro ao salvar dados")
+      } else if ('error' in result) {
+        throw new Error(String(result.error) || "Erro ao salvar dados")
       }
     } catch (error) {
       console.error("Erro ao enviar formulário:", error)
@@ -92,7 +90,23 @@ export default function LeadForm() {
 
   return (
     <div className="bg-white text-[#000a17] rounded-lg p-6 shadow-lg">
-      <h3 className="text-xl font-bold mb-4">Cadastre-se para a lista de espera</h3>
+      <h3 className="text-xl font-bold mb-2">Acesso Prioritário e Exclusivo</h3>
+      {/* <p className="text-sm text-[#000a17]/80 mb-4">Restam apenas <span className="font-bold text-red-600">17 vagas</span> para o primeiro lote com desconto de lançamento</p> */}
+
+      <div className="mb-5 space-y-3">
+        {/* <div className="flex items-center gap-2 text-sm">
+          <CheckCircle className="h-4 w-4 text-green-600 flex-shrink-0" />
+          <span>Primeiros usuários recebem <span className="font-bold">50% de desconto vitalício</span></span>
+        </div> */}
+        <div className="flex items-center gap-2 text-sm">
+          <Clock className="h-4 w-4 text-amber-600 flex-shrink-0" />
+          <span>Oferta disponível por apenas <span className="font-bold">48 horas</span></span>
+        </div>
+        {/* <div className="flex items-center gap-2 text-sm">
+          <Lock className="h-4 w-4 text-blue-600 flex-shrink-0" />
+          <span>Garantia de satisfação ou <span className="font-bold">seu dinheiro de volta</span></span>
+        </div> */}
+      </div>
 
       {isSuccess ? (
         <div className="text-center py-6">
@@ -100,7 +114,7 @@ export default function LeadForm() {
             <CheckCircle className="h-6 w-6 text-green-600" />
           </div>
           <h4 className="text-lg font-bold mb-2">Cadastro realizado com sucesso!</h4>
-          <p className="mb-4">Obrigado pelo seu interesse. Entraremos em contato em breve.</p>
+          <p className="mb-4">Parabéns! Você garantiu sua vaga com condições exclusivas de lançamento. Entraremos em contato nas próximas 24 horas.</p>
           <Button className="bg-[#00204a] hover:bg-[#00367d] text-white" onClick={() => setIsSuccess(false)}>
             Novo cadastro
           </Button>
@@ -165,10 +179,13 @@ export default function LeadForm() {
               </>
             ) : (
               <>
-                Garantir Minha Vaga <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                QUERO VENDER MAIS IMÓVEIS <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
               </>
             )}
           </Button>
+          <p className="text-xs text-center text-[#000a17]/60 pt-2">
+            Ao se cadastrar, você concorda com nossos Termos de Uso e Política de Privacidade.
+          </p>
         </form>
       )}
     </div>
